@@ -1425,7 +1425,7 @@ NFCSTATUS phNxpNciHal_TestMode_open (void)
 
     gDrvCfg.nClientId = phDal4Nfc_msgget(0, 0600);
     gDrvCfg.nLinkType = ENUM_LINK_TYPE_I2C;/* For PN54X */
-    tTmlConfig.pDevName = (int8_t *) nfc_dev_node;
+    tTmlConfig.pDevName = (int8_t *) NXP_NFC_DEVICE;
     tOsalConfig.dwCallbackThreadId = (uintptr_t) gDrvCfg.nClientId;
     tOsalConfig.pLogFile = NULL;
     tTmlConfig.dwGetMsgThreadId = (uintptr_t) gDrvCfg.nClientId;
